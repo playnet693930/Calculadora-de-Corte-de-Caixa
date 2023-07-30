@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calculadora de Corte de Caixa</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Calculadora de Corte de Caixa</h1>
+    <label for="boxWidth">Largura da Caixa (cm):</label>
+    <input type="number" id="boxWidth" step="0.01" required>
+    <label for="boxHeight">Altura da Caixa (cm):</label>
+    <input type="number" id="boxHeight" step="0.01" required>
+    <label for="boxDepth">Profundidade da Caixa (cm):</label>
+    <input type="number" id="boxDepth" step="0.01" required>
+    <label for="sheetWidth">Largura da Folha (cm):</label>
+    <input type="number" id="sheetWidth" step="0.01" required>
+    <label for="sheetHeight">Altura da Folha (cm):</label>
+    <input type="number" id="sheetHeight" step="0.01" required>
+    <button onclick="calculateCuts()">Calcular</button>
+    <div id="result"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
